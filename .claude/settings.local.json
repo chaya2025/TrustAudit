@@ -1,0 +1,18 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(npm run *)",
+      "Bash(curl -s -o /dev/null -w \"%{http_code}\" http://localhost:3000)",
+      "Bash(curl -s http://localhost:3000)",
+      "Bash(curl -s http://localhost:3000/audit)",
+      "Bash(curl -s http://localhost:3000/results)",
+      "Bash(mkdir -p 'c:\\\\Users\\\\1\\\\T-Space\\\\Projects\\\\TrustAudit Project\\\\trustaudit-ai\\\\app\\\\\\(auth\\)\\\\sign-in\\\\[[...sign-in]]')",
+      "Bash(mkdir -p 'c:\\\\Users\\\\1\\\\T-Space\\\\Projects\\\\TrustAudit Project\\\\trustaudit-ai\\\\app\\\\\\(auth\\)\\\\sign-up\\\\[[...sign-up]]')",
+      "Bash(npx tsc *)",
+      "Bash(node -e \"const c = require\\('@clerk/nextjs'\\); console.log\\(Object.keys\\(c\\).filter\\(k => k.toLowerCase\\(\\).includes\\('sign'\\) || k.toLowerCase\\(\\).includes\\('user'\\) || k.toLowerCase\\(\\).includes\\('signed'\\)\\).join\\('\\\\n'\\)\\)\")",
+      "Bash(node -e \"const c = require\\('@clerk/nextjs'\\); console.log\\(Object.keys\\(c\\).filter\\(k => k.toLowerCase\\(\\).includes\\('auth'\\) || k.toLowerCase\\(\\).includes\\('clerk'\\) || k.toLowerCase\\(\\).includes\\('protect'\\)\\).join\\('\\\\n'\\)\\)\")",
+      "Bash(node -e \"const c = require\\('@clerk/nextjs'\\); console.log\\(Object.keys\\(c\\).join\\('\\\\n'\\)\\)\")",
+      "Bash(grep -v \"^$\")"
+    ]
+  }
+}
